@@ -20,10 +20,10 @@ message("BLAS libraries: ${BLAS_LIBRARIES}")
 # if unable to find mkl library, just create BLAS_LIBRARIES here, e.g.
 # set(BLAS_LIBRARIES "-L/path/to/mkl/lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lmkl_avx -lm")
 # or
-# set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/path/to/mkl/lib/intel64/libmkl_intel_lp64.so")
-# set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/path/to/mkl/lib/intel64/libmkl_sequential.so")
-# set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/path/to/mkl/lib/intel64/libmkl_core.so")
-# set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/path/to/mkl/lib/intel64/libmkl_avx.so")
+set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_intel_lp64.so")
+set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_intel_thread.so")
+set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_core.so")
+set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libiomp5.so")
 # set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/path/to/mkl/lib/intel64/libmkl_def.so")
 
 # set(BLAS_LIBRARIES "-Wl,-rpath=${MKLROOT}/lib/intel64/ ${BLAS_LIBRARIES}")
