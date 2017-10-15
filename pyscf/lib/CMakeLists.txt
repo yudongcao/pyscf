@@ -15,6 +15,7 @@ set(CMAKE_MACOSX_RPATH OFF)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 #enable_language(Fortran)
+set(BLAS_DIR "/root/psi4conda/lib/")
 set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_intel_lp64.so")
 set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_intel_thread.so")
 set(BLAS_LIBRARIES "${BLAS_LIBRARIES};/root/psi4conda/lib/libmkl_core.so")
